@@ -57,12 +57,12 @@ if __name__ == "__main__":
     
     parser.add_argument(
         'event_map_path', 
-        'output_map_path',
-        help='The event map to recalculate',
+        # help='The event map to recalculate',
     )
+
     parser.add_argument(
         'output_map_path',
-        help='Path for output',
+        # help='Path for output',
     )
     
 
