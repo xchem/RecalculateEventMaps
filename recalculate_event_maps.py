@@ -11,7 +11,7 @@ def recalculate_event_map(event_map_path,):
     bdc = float(re.search(
         r'1-BDC_([^_]+)',
         name,
-    )[0])
+    )[1])
 
     dtag_dir = event_map_path.parent
     dtag = dtag_dir.name
