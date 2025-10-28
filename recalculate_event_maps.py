@@ -60,7 +60,12 @@ if __name__ == "__main__":
         'output_map_path',
         help='The event map to recalculate',
     )
+    parser.add_argument(
+        'output_map_path',
+        help='Path for output',
+    )
     
+
     args = parser.parse_args()
 
     path = pathlib.Path(args.event_map_path)
