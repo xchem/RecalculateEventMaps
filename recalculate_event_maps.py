@@ -8,10 +8,10 @@ import gemmi
 
 def recalculate_event_map(event_map_path,):
     name = event_map_path.name
-    bdc = re.search(
+    bdc = float(re.search(
         r'1-BDC_([^_]+)',
         name,
-    )[0]
+    )[0])
 
     dtag_dir = event_map_path.parent
     dtag = dtag_dir.name
